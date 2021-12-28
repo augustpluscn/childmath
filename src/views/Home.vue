@@ -46,14 +46,23 @@ export default {
 };
 </script>
 <style lang="scss">
+html,
+body,
+#app,
+.home {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
 .home {
   display: flex;
   flex-flow: wrap;
+  align-content: space-around;
   height: 100%;
   > div {
     width: 50%;
     text-align: center;
-    padding: 10px 0;
   }
 }
 </style>
