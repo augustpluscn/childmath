@@ -1,0 +1,1 @@
+.home{display:flex;flex-flow:wrap;height:99%}.home>div{height:100%;text-align:center;padding:10px 0;display:flex;flex-direction:column}.home>div>div:first-child{height:50px;line-height:50px}.home>div>div:last-child{flex:1;display:flex;flex-flow:wrap}.home>div>div:last-child>div{width:50%}
