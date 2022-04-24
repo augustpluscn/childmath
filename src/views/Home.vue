@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       mathArr: [],
-      type1: 40,
+      type1: 100,
       type2: 30,
       type3: 30
     };
@@ -24,9 +24,9 @@ export default {
   methods: {
     make: function() {
       let arr = [];
-      arr.push(...this.add(this.type1, 21));
-      arr.push(...this.wholeTenAddSingle(this.type2));
-      arr.push(...this.wholeTenAddWholeTen(this.type3));
+      arr.push(...this.add(this.type1, 101));
+      // arr.push(...this.wholeTenAddSingle(this.type2));
+      // arr.push(...this.wholeTenAddWholeTen(this.type3));
       console.log(arr);
       this.mathArr = arr;
     },
