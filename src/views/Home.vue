@@ -26,8 +26,9 @@ export default {
       let arr = [];
       // arr.push(...this.addAndReduce(this.type1, 101));
       arr.push(...this.add(40, 101));
+      arr.push(...this.add(40, 1001));
       arr.push(...this.multiplication(40, 101, 10));
-      arr.push(...this.wholeTenMultiplication(40));
+      // arr.push(...this.wholeTenMultiplication(40));
       arr = this.shuffleSelf(arr, 100);
       this.mathArr = arr;
     },
