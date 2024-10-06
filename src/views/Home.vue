@@ -188,7 +188,7 @@ html,
 body,
 #app,
 .home {
-  height: 100%;
+  height: 99%;
 }
 
 .home>div {
