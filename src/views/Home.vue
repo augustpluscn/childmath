@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div>
-      <div v-for="(item,index) in mathArr" :key="index">
-        {{item}}
+      <div v-for="(item, index) in mathArr" :key="index">
+        {{ item }}
       </div>
     </div>
 
@@ -22,7 +22,7 @@ export default {
   },
   components: {},
   methods: {
-    make: function() {
+    make: function () {
       let arr = [];
       // arr.push(...this.addAndReduce(this.type1, 101));
       arr.push(...this.add(40, 101));
@@ -32,7 +32,7 @@ export default {
       arr = this.shuffleSelf(arr, 100);
       this.mathArr = arr;
     },
-    addAndReduce: function(num, limit = 21) {
+    addAndReduce: function (num, limit = 21) {
       let n = 0;
       let arr = [];
       let x;
@@ -66,7 +66,7 @@ export default {
       }
       return arr;
     },
-    add: function(num, limit = 21) {
+    add: function (num, limit = 21) {
       let n = 0;
       let arr = [];
       let x;
@@ -93,7 +93,7 @@ export default {
       }
       return arr;
     },
-    multiplication: function(num, limita = 101, limitb = 10) {
+    multiplication: function (num, limita = 101, limitb = 10) {
       let n = 0;
       let arr = [];
       let a;
@@ -113,7 +113,7 @@ export default {
       }
       return arr;
     },
-    wholeTenMultiplication: function(num) {
+    wholeTenMultiplication: function (num) {
       let n = 0;
       let x, a, b, z;
       let arr = [];
@@ -130,7 +130,7 @@ export default {
       }
       return arr;
     },
-    wholeTenAddWholeTen: function(num) {
+    wholeTenAddWholeTen: function (num) {
       let n = 0;
       let arr = [];
       let x;
@@ -158,7 +158,7 @@ export default {
 
       return arr;
     },
-    shuffleSelf: function(array, size) {
+    shuffleSelf: function (array, size) {
       let index = -1;
       let length = array.length;
       let lastIndex = length - 1;
@@ -184,11 +184,19 @@ export default {
 };
 </script>
 <style lang="scss">
-.home > div {
+html,
+body,
+#app,
+.home {
+  height: 100%;
+}
+
+.home>div {
   display: flex;
   flex-flow: wrap;
   height: 100%;
-  > div {
+
+  >div {
     width: 24.5%;
     text-align: center;
     padding: 9.5px 0;
