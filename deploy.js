@@ -6,10 +6,10 @@ const ora = require('ora')
 const app = "childmath"
 
 const server = {
-  host: '10.0.0.240',//服务器IP
+  host: '10.0.0.130',//服务器IP
   port: 22,//服务器端口
   username: 'root',//服务器ssh登录用户名
-  password: 'Flzx-3qc',//服务器ssh登录密码
+  password: '123456',//服务器ssh登录密码
   path: '/www/wwwroot/' + app //服务器web目录
 };
 
